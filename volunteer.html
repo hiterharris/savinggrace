@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body id='volunteer'>
+
+    <header class="main-header">
+      <div class="main-nav"></div>
+      <div class="header-images"></div>
+    </header>
+
+    <article class="volunteer clearfix">
+      <h2>Volunteer</h2>
+      <p>Saving Grace always appreciates new volunteers! For safety and liability purposes, we require that all volunteers be at least 18 years of age. If you can help out during weekdays it would help us greatly, as this is the time we need the help most. If you are not yet 18, please consider helping by spreading the word, collecting monetary donations or collect supplies. Saving Grace appreciates donations of old blankets and towels, laundry supplies and several other items on our donations page. If you can help out during weekdays it would help us greatly, as this is the time we need the help most. </p>
+
+      <div class="content-float">
+        <!--Edit style in adoption.scss  -->
+        <p class="list-header">Volunteer opportunities include:</p>
+        <ul>
+          <li>Cleaning</li>
+          <li>Laundry</li>
+          <li>Assisting at adopt-a-thons</li>
+          <li>Walking dogs</li>
+          <li>Training the dogs basic manners</li>
+          <li>Socializing puppies</li>
+          <li>Transporting dogs to the vet or to be groomed</li>
+          <li>Taking digital pictures to update website</li>
+          <li>Filing medical histories and other paperwork</li>
+        </ul>
+      </div>
+
+    <div class="form-float">
+      <form>
+          <p class="form-header">Sign up to Volunteer</p>
+          <div class="form-name">
+            <label for="firstName">First Name</label>
+            <input type="text" id="fname"firstName>
+          </div>
+          <div class="form-name">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lname"lastName>
+          </div>
+          <label for="address">Email</label>
+          <input type="text" id="email" name="address">
+          <input type="checkbox" name="age" id="checked" value="Over18">Yes, I am over 18
+          <input type="submit" value="Submit" id="submit">
+        </form>
+      </div>
+    </article>
+
+    <article class="foster">
+      <h2>Foster A Dog</h2>
+      <!-- <div class="content-float"> -->
+        <p>We are always in need of loving foster parents! If you are interested in our foster program please email us at <a href="mailto:savinggrace@savinggracenc.org" target="_blank">savinggrace@savinggracenc.org</a>. We will schedule a time to meet with you in person. Download the <a href="http://savinggracenc.org/files/SavingGraceFosterAgreement.pdf" target="_blank">Foster Agreement</a>, read it carefully, as you will need to sign that you agree to the terms. You will need to bring in a signed contract when we meet.</p>
+      <!-- </div> -->
+      <div class="foster-content">
+        <div class="foster-info">
+          <form>
+            <p class="form-header">Learn More About Fostering</p>
+            <div class="form-name">
+              <label for="firstName">First Name</label>
+              <input type="text" id="fname"firstName>
+            </div>
+            <div class="form-name">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lname"lastName>
+            </div>
+            <label for="address">Email</label>
+            <input type="text" id="email" name="address">
+
+            <input type="submit" value="Submit" id="submit">
+          </form>
+        </div>
+        <div class="foster-agreement">
+          <!--Edit style in adoption.scss  -->
+          <p class="list-header">Foster Needs include:</p>
+          <ul>
+            <li>Happy Home</li>
+            <li>Friendly pets (if you already have animals)</li>
+            <li>Space</li>
+            <li>Time to take care of the happy dog</li>
+            <li>Training the dogs basic manners</li>
+            <li>Making sure your dog always feels welcomed</li>
+            <li>Keeping to a schedule, try and give the dog a sense of order for the limited time they're in your home.</li>
+            <li>Taking digital pictures to update website</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <footer></footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script>
+      $('.main-nav').load('includes/nav.html');
+      $('.header-images').load('includes/header-images.html');
+      $('footer').load('includes/footer.html');
+    </script>
+
+  </body>
+</html>

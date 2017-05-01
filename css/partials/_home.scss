@@ -1,0 +1,379 @@
+@font-face {
+  font-family: GoodDog;
+  src:url('../fonts/GOODDP__.TTF');
+}
+
+#home {
+
+header {
+  overflow: hidden;
+  background-image: url("../images/home-images/home-hero.jpg");
+  height:800px;
+  width:100%;
+  background-repeat:no-repeat;
+  background-size: cover;
+  .tagline {
+    width:28%;
+    padding:15% 5% 10% 60%;
+    font-size: 64px;
+    color:$teal;
+  }
+}
+
+nav {
+  border-bottom: 1px solid white;
+  .nav-left {
+    width:30%;
+
+    .logo {
+      margin-left: 5%;
+      margin-top: 5%;
+    }
+  }
+
+  .nav-right {
+    margin-right:5%;
+    margin-bottom:2.5%;
+    margin-top:-3%;
+    overflow:hidden;
+    clear:both;
+
+    li {
+      float:right;
+      list-style: none;
+      color:white;
+      font-size:24px;
+      font-weight: 300;
+      padding: 0px 30px 0px 30px;
+    }
+    .donate {
+      border-radius:8px;
+      line-height: 30px;
+      background: #25AA93;
+      border: 2px solid transparent;
+    }
+    .donate:hover {
+      border: 2px solid white;
+    }
+  }
+}
+
+.welcome {
+
+  .welcome-small {
+    margin-left:5%;
+    padding:30px;
+
+    .paw, .welcome-content {
+      float:left;
+      text-align: center;
+    }
+    .paw {
+      height:100px;
+    }
+    .paw1 {
+      padding-right:50px;
+      padding-top: 25px;
+    }
+    .paw2 {
+      padding-left:50px;
+      padding-top: 25px;
+    }
+    .welcome-content {
+      width:70%;
+    }
+  }
+}
+
+.cards {
+  margin-left:4%;
+  .cards-small{
+    .adoption, .program, .good {
+      width:30%;
+      overflow:hidden;
+      float:left;
+      margin:1%;
+      h3 {
+        font-weight: bold;
+      }
+    }
+    .adoption {
+      background: rgba(37,170,147,.75);
+      text-align: center;
+      height:600px;
+      .learn-more {
+        height:50px;
+        width:150px;
+        color:white;
+        border-radius: 8px;
+        background:#25AA93;
+        border:none;
+      }
+      button:hover {
+        border:2px solid white;
+      }
+      padding-bottom: 20px;
+      p {
+        margin:1%;
+      }
+    }
+    .program {
+      background:rgba(146,220,224,.50);
+      text-align: center;
+      height:600px;
+      .learn-more {
+        height:50px;
+        width:150px;
+        color:white;
+        border-radius: 8px;
+        background:#92DCE0;
+        border:none;
+      }
+      button:hover {
+        border:2px solid white;
+      }
+      padding-bottom: 20px;
+      p {
+        margin:1%;
+      }
+    }
+    .good {
+      background:rgba(249,138,95,.50);
+      text-align:center;
+      height:600px;
+      .learn-more {
+        height:50px;
+        width:150px;
+        color:white;
+        border-radius: 8px;
+        background:#F98A5F;
+        border:none;
+      }
+      button:hover {
+        border:2px solid white;
+      }
+      .good-image {
+        width:100%;
+        height:225px;
+      }
+      padding-bottom: 20px;
+      p {
+        margin:1%;
+      }
+    }
+  }
+}
+
+.sign-up {
+  background:rgba(249, 138, 95, 0.5);
+  color:white;
+  text-align: center;
+  .sign-up-small {
+    padding-top:20px;
+    input {
+      color:grey;
+      width:400px;
+      height:25px;
+      border-radius: 8px;
+      border:none;
+    }
+  }
+  .stay-updated {
+    height:50px;
+    width:150px;
+    color:white;
+    border-radius: 8px;
+    background:#F98A5F;
+    border:none;
+  }
+  .stay-updated:hover {
+    border: 2px solid white;
+  }
+}
+
+.matchmaker {
+  clear:both;
+  position:relative;
+  h1 {
+    text-align: center;
+    line-height: 0;
+  }
+  img {
+    margin-left:22%;
+    margin-right:22%;
+  }
+  .matchmaker-small {
+    width:60%;
+    position: relative;
+    border:1px solid black;
+    margin:0 auto;
+    .matchmaker-image {
+      width:50%;
+      margin-left:25%;
+      margin-right:25%;
+      text-align:center;
+    }
+    p {
+      text-align: center;
+      padding: 0 50px 25px 50px;
+
+    }
+    .matchmaker-button {
+      width:40%;
+      height:50px;
+      color:white;
+      background:#609194;
+      font-size:22px;
+      border-radius:8px;
+      border:none;
+      margin-left:30%;
+      cursor:pointer;
+    }
+  }
+  .question-one{
+    display:none;
+    position:relative;
+    top:0;
+    left:0;
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+    color:white;
+    border:1px solid black;
+    background:#609194;
+    button {
+      height:50px;
+      width:200px;
+      border-radius:8px;
+      border:1px solid white;
+      background:transparent;
+      color:white;
+      font-size:22px;
+    }
+    button:hover {
+      border:2px solid white;
+    }
+    .next {
+      width:400px;
+    }
+    .next:hover {
+      border:2px solid white;
+    }
+    .select {
+      // background:#25AA93;
+    }
+    img {
+      height:20px;
+    }
+  }
+}
+
+.spotlight {
+  overflow:hidden;
+  clear:both;
+  background:rgba(146,220,224,.50);
+  padding:20px;
+  display:flex;
+  flex-wrap:wrap;
+
+  .spotlight-small {
+    h1 {
+      text-align: center;
+      padding-right: 120px;
+    }
+  img, p {
+    float:left;
+    padding:20px;
+  }
+  p {
+    width:60%;
+    font-size:18px;
+    text-align: center;
+  }
+  img {
+    height:350px;
+  }
+  }
+}
+
+@media (max-width:1200px) {
+  .paw, .paw2 {
+    display:none;
+  }
+}
+
+@media (max-width: 767px){
+  .cards {
+    margin:0;
+  }
+  .tagline {
+    display:none;
+  }
+  .welcome-content {
+    margin-left:10%;
+  }
+  .spotlight-image {
+    margin-left:20%;
+    margin-right:20%;
+  }
+  .spotlight p {
+    margin-left:20%;
+    margin-right:20%;
+  }
+  .spotlight img {
+    margin-left:0%;
+  }
+  .paw1, .paw2 {
+    display:none;
+  }
+  header h1 {
+    padding: 25% 0% 0% 5%;
+  }
+  .cards {
+    .cards-small{
+      .adoption, .program, .good {
+        width:70%;
+        overflow:hidden;
+        float:none;
+        margin:0 auto;
+      }
+    }
+  }
+  .spotlight .spotlight-small h1 {
+    padding:0px;
+  }
+  .spotlight .spotlight-small p {
+    padding:0px;
+  }
+  .spotlight .spotlight-small img {
+    padding:0px;
+  }
+}
+
+@media (max-width: 378px){
+
+  .spotlight-image {
+    margin-left:0;
+  }
+  .spotlight .spotlight-small
+  img, .spotlight p {
+    padding: 0px;
+  }
+  .sign-up .sign-up-small input {
+    width:250px;
+  }
+  .matchmaker .matchmaker-small .matchmaker-button {
+    width:60%;
+    margin:0 20%;
+  }
+  header h1 {
+    padding: 25% 0% 0% 10%;
+  }
+}
+
+
+
+
+
+
+}

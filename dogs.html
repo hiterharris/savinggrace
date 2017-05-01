@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Dogs</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body id="dogs">
+
+    <header class="main-header">
+      <div class="main-nav"></div>
+      <div class="header-images"></div>
+    </header>
+
+      <section class="section-margin">
+        <h2>Our Dogs</h2>
+        <div id="dog-container">
+        <script id="book-example" type="text/x-handlebars-template">
+          <div class="div-margin">
+            <div class="div-flex">
+              {{#each books}}
+              <article>
+                <img class="dog-images" src="images/dogs-images/{{cover}}.png" alt="{{name}}">
+                <div class="div-color div-{{color}}">
+                <a data-remodal-target="{{modal}}"><h5 class="a-{{color}}">{{name}}</h5></a>
+                </div>
+              </article>
+              {{/each}}
+            </div>
+          </div>
+        </script>
+        </div>
+      </section>
+
+
+    <section>
+        <div class="remodal remodal-teal" data-remodal-id="modal-Astro">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Astro.png" alt="Astro">
+          <article>
+            <h1>Astro</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Feist / Dachshund</li>
+              <li><strong>Gender:  </strong>Male</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Small</li>
+            </ul>
+            <br>
+            <p>Astro is a fun and sporty little guy. He may be smaller in size but he isn't small on personality and has the energy to keep up with all big dog activities. He will be a great running companion, hiking companion and will be a great dog to teach to play Frisbee or fetch.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-light-blue" data-remodal-id="modal-Brook">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Brook.png" alt="Brook">
+          <article>
+            <h1>Brook</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Chihuahua</li>
+              <li><strong>Gender:  </strong>Female</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Small</li>
+            </ul>
+            <br>
+            <p>Brook is what we like to call a dear old friend. A small girl who has no doubt been around the block and has some stories to tell too. She is a well established lady who can hold her own and has lived through some tough times and also knows the value of good family, friends and a safe and cozy place to rest her head.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-dark-blue" data-remodal-id="modal-Celine">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Celine.png" alt="Celine">
+          <article>
+            <h1>Celine</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Beagle</li>
+              <li><strong>Gender:  </strong>Female</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Medium</li>
+            </ul>
+            <br>
+            <p>Celine is another one of our Beagles. She is about 2 years old and weighs about 22lbs. She is a happy girl who likes to be loved and feels like hugging a stuffed animal. She is soft and cozy and would be the best snuggle buddy!</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-yellow" data-remodal-id="modal-Cha-Cha">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Cha-Cha.png" alt="Cha Cha">
+          <article>
+            <h1>Cha Cha</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Mountain Dog / <br>Australian Shepherd</li>
+              <li><strong>Gender:  </strong>Male</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Large</li>
+            </ul>
+            <br>
+            <p>We invite you to come meet happy and handsome Cha Cha. He is a huge fan of belly rubs and will make himself ready for one at the drop of a hat. He is full of joy and will surely make you smile. He is super easy and not too fussy about anything. He loves other dogs and enjoys meeting people.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-orange" data-remodal-id="modal-Chops">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Chops.png" alt="Chops">
+          <article>
+            <h1>Chops</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Labrador Retriever</li>
+              <li><strong>Gender:  </strong>Female</li>
+              <li><strong>Age:  </strong>Young</li>
+              <li><strong>Size:  </strong>Medium</li>
+            </ul>
+            <br>
+            <p>Chops came to us emaciated with a lot of her teeth missing and a terrible infection in her mouth. We have no idea why she lost her teeth but she is an overcomer for sure! Chops is affectionate and super spunky now that she feels good since treating the infection. Chops is fantastic with other dogs and cats and she is fun and playful now. </p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-teal" data-remodal-id="modal-Copper">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Copper.png" alt="Copper">
+          <article>
+            <h1>Copper</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Hound</li>
+              <li><strong>Gender:  </strong>Male</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Large</li>
+            </ul>
+            <br>
+            <p>Copper is a lovely handsome hound who is past all the puppy part of life and ready to settle into a family atmosphere where he can enjoy some TLC. Copper is 4 years old and well behaved. He is so well mannered in his crate and will pick up on your routines very easily. This boy is mature in his behavior and he does play well with others.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-light-blue" data-remodal-id="modal-Dahlia">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Dahlia.png" alt="Dahlia">
+          <article>
+            <h1>Dahlia</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Hound</li>
+              <li><strong>Gender:  </strong>Female</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Medium</li>
+            </ul>
+            <br>
+            <p>Dahlia is a lovely and social adult Hound female weighing about 45 lbs. She arrived to the farm with some nasty wounds that have begun to heal up and she is feeling so much better. Dahlia can be found greeting our guests as they arrive, playing with her peers, or sunning herself on the porch. This sweet gal will be a lovely addition to any family. She has a delightful personality, soft and gentle and affectionate too.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-dark-blue" data-remodal-id="modal-Darryl">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Darryl.png" alt="Darryl">
+          <article>
+            <h1>Darryl</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Labrador Retriever</li>
+              <li><strong>Gender:  </strong>Male</li>
+              <li><strong>Age:  </strong>Young</li>
+              <li><strong>Size:  </strong>Medium</li>
+            </ul>
+            <br>
+            <p>Darryl is a fun loving energetic teenager. He loves to meet people and loves to play with his friends. Darryl has a super fabulous 6-month old lab mix. Darryl has a great personality and truly enjoys human companions. Darryl would make a great Frisbee dog or walking/hiking companion. He definitely will benefit from some puppy classes for bonding and learning.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-yellow" data-remodal-id="modal-Dugar">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Dugar.png" alt="Dugar">
+          <article>
+            <h1>Dugar</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Beagle</li>
+              <li><strong>Gender:  </strong>Male</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Medium</li>
+            </ul>
+            <br>
+            <p>Dugar is a sweet boy even though he can be grumpy sometimes. He likes taking long walks and is wonderful with kids.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-orange" data-remodal-id="modal-Duncan">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Duncan.png" alt="Duncan">
+          <article>
+            <h1>Duncan</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Hound</li>
+              <li><strong>Gender:  </strong>Male</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Large</li>
+            </ul>
+            <br>
+            <p>Duncan is a happy go lucky adult Hound gentleman who is fully grown at about 45lbs. He is a socialite and enjoys hanging with his peers here on the farm. His sweet soulful eyes will just draw you in as he also loves meeting new people. Duncan plays well with others and can adjust to big or small friends.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-teal" data-remodal-id="modal-Empress">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Empress.png" alt="Empress">
+          <article>
+            <h1>Empress</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Hound / Mixed Breed</li>
+              <li><strong>Gender:  </strong>Female</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Medium</li>
+            </ul>
+            <br>
+            <p>Empress is the socialite of all social activities. She always has a smile on her face and ready to welcome any new comer with a bounce in her step and a happy grin. Empress arrived at the farm with a hitch in her step and doctors deemed it best to remove the lame leg. Empress has recovered nicely from her amputation and honestly seems to prefer not having to drag that leg around anymore.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-light-blue" data-remodal-id="modal-Gavin">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Gavin.png" alt="Gavin">
+          <article>
+            <h1>Gavin</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Terrier / Mixed Breed</li>
+              <li><strong>Gender:  </strong>Male</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Medium</li>
+            </ul>
+            <br>
+            <p>Gavin is a bundle of fun and energy to surely make you laugh. He has personality and isnât afraid to let it show. He is bouncy and playful and very friendly to his peers and the people he meets. He is a terrier mix about a year old and about 35-40 lbs fully grown. Gavin has been doing well with his crate training and is so grateful to be at the funny farm where he is loved.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-dark-blue" data-remodal-id="modal-Katie">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Katie.png" alt="Katie">
+          <article>
+            <h1>Katie</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Staffordshire Bull Terrier</li>
+              <li><strong>Gender:  </strong>Female</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Large</li>
+            </ul>
+            <br>
+            <p>Katie is a sweet and loving girl. She will always greet you with a big (and I mean BIG) smile. She absolutely loves people and dogs as well. Katie is about 4 years old and found herself here after her owner died. She is fully house trained, loves to be in a house and even on a couch. Katie is learning the ropes of crate training and does well on a leash. She gets along with other dogs of all sizes and is one fabulous loving lady.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-yellow" data-remodal-id="modal-Keller">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Keller.png" alt="Keller">
+          <article>
+            <h1>Keller</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Beagle</li>
+              <li><strong>Gender:  </strong>Male</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Medium</li>
+            </ul>
+            <br>
+            <p>Keller is a social guy who likes the company of other dogs, and is always near the front of the line for a little loving from his human buddies. He is a quiet boy, both inside and outside and is very relaxed in his crate. This easy boy will slip right in to any family and help to make years of happy memories together.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-orange" data-remodal-id="modal-Lucky">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Lucky.png" alt="Lucky">
+          <article>
+            <h1>Lucky</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Boxer / Mixed Breed</li>
+              <li><strong>Gender:  </strong>Male</li>
+              <li><strong>Age:  </strong>Baby</li>
+              <li><strong>Size:  </strong>Medium</li>
+            </ul>
+            <br>
+            <p>This little guy is ready to fall in love with you. He is submissive to his litter mates, but loves to romp, jump, and play. He loves to eat and then fall asleep in your arms. Lucky has an expressive face and seems to always be curious. He plays well with children and other dogs, and needs a nice, warm, soft bed to call his own.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-teal" data-remodal-id="modal-Nova">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Nova.png" alt="Nova">
+          <article>
+            <h1>Nova</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Shepherd / Boxer</li>
+              <li><strong>Gender:  </strong>Female</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Medium</li>
+            </ul>
+            <br>
+            <p>Nova is a shepherd/boxer mix about 2 years old and weighs approximately 40lbs. She shows signs of athleticism so she would very much enjoy taking walks, doing a long distance hike or playing in the yard with her new family members. She is also very low key and relaxed. She has a sweet personality but doesnât smile. Nova is very good in her crate and well mannered at meal time.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-light-blue" data-remodal-id="modal-Popcorn">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Popcorn.png" alt="Popcorn">
+          <article>
+            <h1>Popcorn</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Pit Bull Terrier / Boxer</li>
+              <li><strong>Gender:  </strong>Female</li>
+              <li><strong>Age:  </strong>Baby</li>
+              <li><strong>Size:  </strong>Medium</li>
+            </ul>
+            <br>
+            <p>Popcorn is a Pitt / Boxer mix who is a friendly, outgoing lady. She is brindle in color with a white face and a black eye. She enjoys life to the fullest. Playing with her toys and her brother are her favorite things to do. Popcorn loves to explore the outdoors. She has an endless amount of energy but does settle down and loves to curl up on a lap at the end of the day.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-dark-blue" data-remodal-id="modal-Queen">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Queen.png" alt="Queen">
+          <article>
+            <h1>Queen</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Beagle / Hound</li>
+              <li><strong>Gender:  </strong>Female</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Medium</li>
+            </ul>
+            <br>
+            <p>Queenie is an adult Beagle / Hound mix with great long soft ears. She weighs about 30 lbs fully grown and is hopeful of a forever yard of her own that she can run and explore new smells in. Queenie is looking to bond with a special someone in hopes of growing old together sharing the warm rays on a nice porch. Queenie is doing great in her crate and is learning to walk on a leash.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-yellow" data-remodal-id="modal-Quincy">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Quincy.png" alt="Quincy">
+          <article>
+            <h1>Quincy</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Quincy</li>
+              <li><strong>Gender:  </strong>Male</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Medium</li>
+            </ul>
+            <br>
+            <p>Quincy is an adult Beagle/Hound mix who is about 35lbs fully grown. He is super loving and squishy and ready for a place of his own. Quincy is a super chill boy who has nice soft flowy ears and soulful eyes. Quincy is doing well in his crate and is enjoying playing with the other dogs. He enjoys love and affection and will be most happy having a yard to roam in, a nice porch to sun on and a cozy warm bed to sleep in. </p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-orange" data-remodal-id="modal-Tammy">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Tammy.png" alt="Tammy">
+          <article>
+            <h1>Tammy</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Shepherd</li>
+              <li><strong>Gender:  </strong>Female</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Large</li>
+            </ul>
+            <br>
+            <p>Tammy is a beautiful but somewhat shy blonde shepherd or husky mix. She is good with other dogs and great in her crate. While Tammy might take a little time to warm up people, she has the looks to draw you in. She has a lovely coat and perky ears. Tammy is about 2 years old and looking for a family with patience to give her a chance.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-teal" data-remodal-id="modal-Taylor">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Taylor.png" alt="Taylor">
+          <article>
+            <h1>Taylor</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Shepherd / Mixed Breed</li>
+              <li><strong>Gender:  </strong>Female</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Medium</li>
+            </ul>
+            <br>
+            <p>Taylor is an absolutely gorgeous young lady, a small Shepherd mix who is working hard to show the world she is as beautiful on the inside as she is on the outside. Fully grown at around 2 years old, she is a perfect size at 27 or so pounds, and she could stand to gain a couple more. She has a fluffy, coppery red medium length coat, and a short fluffy tail.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-light-blue" data-remodal-id="modal-Tiki">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Tiki.png" alt="Tiki">
+          <article>
+            <h1>Tiki</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Dutch Shepherd /<br>Pit Bull Terrier</li>
+              <li><strong>Gender:  </strong>Female</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Small</li>
+            </ul>
+            <br>
+            <p>Tiki is a Carolina Dog/Pit Terrier mix. She has a brindle coat and is about 1 year old. She is full of happy energy. She has the cutest wiggle when she gets excited. Tiki would make a great exercise partner and would benefit from an active family who will help her use up her energy throughout the day.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-dark-blue" data-remodal-id="modal-Violet">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Violet.png" alt="Violet">
+          <article>
+            <h1>Violet</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Staffordshire Bull Terrier /<br>Labrador Retriever</li>
+              <li><strong>Gender:  </strong>Female</li>
+              <li><strong>Age:  </strong>Young</li>
+              <li><strong>Size:  </strong>Medium</li>
+            </ul>
+            <br>
+            <p>Violet is a young Pit / Lab mix. She is unbelievably sweet, social and playful. She gets along great with other dogs and loves meeting people too. She is attentive to people and is super smart. With a little coaching this girl will knock your socks off. She is ready to join you in just about any activity. She is fabulous in her crate and ready to learn more things.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-yellow" data-remodal-id="modal-Wendy">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Wendy.png" alt="Wendy">
+          <article>
+            <h1>Wendy</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Shepherd / Mixed Breed</li>
+              <li><strong>Gender:  </strong>Female</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Large</li>
+            </ul>
+            <br>
+            <p>Wendy has a sleek figure and striking markings. She has a soft tender soul to add to her overall beauty. She will hypnotize you with her gorgeous amber eyes. Wendy is easy going and gets along with other dogs and is happy to join in play but also happy to sit on the sidelines to watch. She is hopeful to meet a special person or family very soon.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-orange" data-remodal-id="modal-Zazzle">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Zazzle.png" alt="Zazzle">
+          <article>
+            <h1>Zazzle</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Bluetick Coonhound</li>
+              <li><strong>Gender:  </strong>Female</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Large</li>
+            </ul>
+            <br>
+            <p>Zazzle is a lovely adult bluetick coonhound gal with beautiful markings and lovely ears. She is 3-4 years old and gets along well with other dogs. Zazzle enjoys roaming the grounds and running and playing with the other dogs. She is an easy girl who is not too demanding.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-teal" data-remodal-id="modal-Zelda">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Zelda.png" alt="Zelda">
+          <article>
+            <h1>Zelda</h1>
+            <ul>
+              <li><strong>Breed:  </strong>Terrier</li>
+              <li><strong>Gender:  </strong>Female</li>
+              <li><strong>Age:  </strong>Adult</li>
+              <li><strong>Size:  </strong>Small</li>
+            </ul>
+            <br>
+            <p>Zelda is a shy adult terrier. She is sweet and gentle and is slowly learning to trust. She needs someone to be patient with her while she gains her confidence in people. While in foster care Zelda has done great with her house training and has very good manners. She has fun running around the yard and loves to play with her toys. She clearly wants to experience love and affection but is reserved at making the first step.</p>
+          </article>
+        </div>
+    </section>
+
+    <footer></footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script src="js/remodal.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+      $('.main-nav').load('includes/nav.html');
+      $(".header-images").load("includes/header-images.html")
+      $("footer").load("includes/footer.html");
+    </script>
+
+  </body>
+</html>

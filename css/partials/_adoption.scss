@@ -1,0 +1,107 @@
+#adopt article, #volunteer article {
+  padding: 2% 15%;
+}
+
+#adopt, #volunteer {
+  ul, ol {
+    margin-left: 6%;
+    li {
+      margin: 10px 0;
+    }
+  }
+}
+
+.why-adopt, .faq, .volunteer, .foster {
+  h2 {
+    text-align: left;
+    padding-bottom: 2%;
+  }
+}
+
+.list-header {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.avoid-problems {
+  background: $light-blue-opacity;
+  .box {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 3%;
+  }
+}
+
+.faq {
+  // text-align: center;
+  button, .panel {
+    width: 100%;
+    // margin: 0 auto;
+  }
+  button {
+    background: $orange;
+    text-align: left;
+    padding: 10px 15px;
+    border: none;
+    margin-bottom: 1px;
+    outline: none;
+    // border-radius: 8px;
+  }
+  .panel {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    text-align: left;
+    display: none;
+
+    p:nth-child(n+2){
+      padding: 10px 0;
+    }
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Media Queries
+
+@media (max-width: 767px){
+  #adopt article, #volunteer article {
+    padding: 2% 5%;
+  }
+
+  #adopt, #volunteer {
+    ul, ol {
+      margin-left: 3%;
+      li {
+        margin: 10px 0;
+      }
+    }
+  }
+  .why-adopt, .faq, .volunteer, .foster {
+    h2 {
+      text-align: center;
+      padding-bottom: 1%;
+      font-size:1.5rem;
+    }
+  }
+
+  .avoid-problems {
+    h2 {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 1%;
+      font-size:1.5rem;
+    }
+    .box {
+      width: 100%;
+      float: none;
+    }
+  }
+}

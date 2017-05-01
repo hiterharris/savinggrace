@@ -1,0 +1,95 @@
+#about .mission-background {
+  background: $light-blue-opacity;
+  height: auto;
+  margin: 0 0;
+  width: 100%;
+}
+
+#about .header-padding {
+  padding: 2% 10%;
+}
+
+#about .paragraph-padding {
+  padding: 0% 10% 2% 10%;
+}
+
+#about .paragraph-size {
+  font-size: 1.25rem;
+}
+
+#about #signature {
+  padding-top: 4%;
+  padding-right: 10%;
+  float: right;
+}
+
+#about .header-padding-2 {
+  padding: 2% 10% 1% 10%;
+}
+
+#about .row {
+  display: flex;
+  justify-content: center;
+}
+
+#about .bio-left {
+  height: auto;
+  margin: 3% 5% 3% 10%;
+  width: 40%;
+
+  img {
+    float: left;
+    height: auto;
+    object-fit: cover;
+    width: 40%;
+  }
+
+  p {
+    float: left;
+    margin-left: 50px;
+    width: 40%
+  }
+}
+
+#about .bio-right {
+  height: auto;
+  margin: 3% 10% 3% 5%;
+  width: 40%;
+
+  img {
+    float: left;
+    height: auto;
+    object-fit: cover;
+    width: 40%;
+  }
+
+  p {
+    float: left;
+    margin-left: 50px;
+    width: 40%
+  }
+}
+
+#about .name {
+  color: $orange;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  #about .row {
+    flex-wrap: wrap;
+  }
+
+  #about .bio-left {
+    height: auto;
+    margin: 3% auto;
+    width: 80%;
+  }
+
+  #about .bio-right {
+    height: auto;
+    margin: 3% auto;
+    width: 80%;
+  }
+}

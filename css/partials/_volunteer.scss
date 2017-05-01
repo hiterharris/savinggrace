@@ -1,0 +1,115 @@
+// Article padding and list styled in adoption.scss
+
+.volunteer {
+  background: $light-blue-opacity;
+}
+
+#volunteer {
+  form {
+    background: $orange-opacity;
+    padding: 15px 20px;
+    border-radius: 8px;
+
+    label {
+      display: block;
+    }
+    input {
+      border: none;
+      outline: none;
+      padding: 5px;
+      margin-bottom: 15px;
+      width: 97%;
+    }
+    #submit {
+      background: $orange;
+      padding: 10px 50px;
+      width: 100%;
+    }
+    #checked {
+      margin: 0 5px 15px;
+      width: 5%;
+    }
+  }
+}
+
+.form-header {
+  font-weight: 900;
+  font-size: 2rem;
+  width: 80%;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+.form-name {
+  width: 48%;
+  float: left;
+  margin-right: 1%;
+  box-sizing: border-box;
+}
+.form-name:nth-of-type(1){
+  margin-right: 3%;
+}
+.content-float {
+  width: 60%;
+  float: left;
+  box-sizing: border-box;
+}
+.form-float {
+  width: 40%;
+  float: left;
+  margin-top: 15px;
+  box-sizing: border-box;
+}
+
+.foster {
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+.foster-content {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+
+  .foster-agreement {
+    height: 300px;
+    margin-left: 25px;
+    .list-header{
+      margin-top: 0px;
+    }
+  }
+}
+
+@media (max-width: 767px){
+  .content-float {
+    width: 100%;
+    float: none;
+  }
+
+  .form-float {
+    width: 80%;
+    margin:25px auto;
+    float: none;
+  }
+
+  .form-header {
+    font-weight: 900;
+    font-size: 2rem;
+    width: 100%;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  .foster-content {
+    display: block;
+  }
+
+  .foster-agreement {
+    width: 400px;
+    margin: 2% auto;
+  }
+
+}

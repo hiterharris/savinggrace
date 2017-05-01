@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: 'Lato', sans-serif;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.clearfix::after {
+  content:"";
+  clear: both;
+  display: block;
+}
+
+//colors
+$teal: #28BE9B; //Navigation color/Primary
+$teal-opacity: #5ecfb4; //75% opacity from teal color
+$light-blue: #92DCE0;
+$light-blue-opacity: #c8edef; //50% opacity from light blue color
+$dark-blue: #609194;
+$dark-blue-opacity: #88adaf; //75% opacity from dark blue color
+$yellow: #FFE192;
+$yellow-opacity: #fff0c8; //50% opacity from yellow color
+$orange: #F98A5F;
+$orange-opacity: #fcc4af; //50% opacity from orange color

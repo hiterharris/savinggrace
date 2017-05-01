@@ -1,0 +1,253 @@
+/////////////////////
+// Header///////////
+///////////////////
+
+// Mobile Navigation
+.mobile-nav {
+  height:75px;
+  background-color: $teal;
+  display: none;
+  // justify-content: space-around;
+  // align-items: center;
+  // display: none;
+  // position: fixed;
+  top:0;
+  width:100%;
+  z-index: 100;
+  // opacity: 30;
+
+  img {
+    height:50px;
+  }
+
+  .donate {
+    padding: 5px 40px;
+     background:#fff;
+     border:none;
+     border-radius: 8px;
+     outline-color:#fff;
+     width:40%;
+     margin: 0 15px;
+
+     a{
+     font-size:1.25rem;
+     color:$teal;
+     text-decoration: none;
+     font-weight:700;
+     }
+  }
+}
+
+.hamburger {
+   position: relative;
+   border:none;
+   background-color:#fff;
+   color:$teal;
+   outline:0;
+   top:0;
+   border-radius: 4px;
+   padding: 3px 6px;
+}
+
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  top:60px;
+  right:0px;
+  li {
+    list-style-type: none;
+    a{
+      display: inline-block;
+      padding: 10px;
+      text-decoration: none;
+      background:$teal;
+      color:#fff;
+      width: 100px;
+      text-align: right;
+      margin-right:0;
+    }
+    a:hover {
+      background:#fff;
+      color:$teal;
+    }
+  }
+}
+
+
+// Desktop Navigation
+.main-header {
+  .desktop-nav {
+  height: 75px;
+  background-color: $teal;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    height: 50px;
+  }
+
+    ul {
+      li {
+        display: inline-block;
+        position: relative;
+        a {
+          color: #fff;
+          padding:5px 0;
+          margin: 0 5px;
+          text-decoration: none;
+          border-bottom: 3px solid transparent;
+        }
+        a:hover {
+          font-weight: 700;
+          padding-bottom: 5px;
+          border-bottom: 3px solid #fff;
+        }
+
+        ul {
+          position: absolute;
+          top: 48px;
+          display: none;
+          z-index: 100;
+
+          a {
+              display: block;
+              width: 115px;
+              background: #fff;
+              padding-left: 5px;
+              color: $teal;
+            }
+          a:hover{
+              border-bottom-color: transparent;
+              background: $teal;
+              color: #fff;
+            }
+        }
+      }
+
+      li:hover ul {
+          display: block;
+        }
+    }
+  }
+}
+
+#donate-button {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 6px 10px;
+    position: relative;
+}
+#donate-button:hover {
+  color: $teal;
+  background: #fff;
+  border-bottom-color: transparent;
+  font-weight: 700;
+}
+
+// 4 Dog images
+
+.header-images {
+  width: 100%;
+  margin: 0;
+  font-size: 0;
+  filter: none;
+
+  img {
+    height: 255px;
+    // width: 100%;
+    // box-sizing: border-box;
+    margin: 0;
+  }
+  img:nth-child(odd) {
+    width: 30%;
+    object-fit: cover;
+  }
+  img:nth-child(even) {
+    width: 20%;
+    object-fit: cover;
+  }
+}
+
+///////////////////////////
+// Footer ////////////////
+//////////////////////////
+
+footer {
+  background: $teal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+  padding: 0.25% 2%;
+
+  .contact, .address {
+    color: white;
+    font-weight: 300;
+    font-size: .9rem;
+    margin: 0 5px;
+    text-align: center;
+
+    a {
+      letter-spacing: .01rem;
+      color: white;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+///////////////////////////
+// Media Queries///////////
+//////////////////////////
+
+@media (max-width: 767px){
+  .main-header {
+    img {
+      height: 30px;
+    }
+    .desktop-nav {
+      padding: 0 .5%;
+    }
+  }
+  footer {
+    padding: 0 2%;
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 600px){
+  .main-header {
+    .desktop-nav {
+      display: none;
+    }
+  }
+  .mobile-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+  }
+
+  .header-images {
+
+    img:nth-child(even) {
+      display: none;
+    }
+    img:nth-child(odd) {
+      width: 50%;
+    }
+  }
+
+  footer {
+    .contact {
+      display: inline-block;
+      width:100%;
+      text-align: center;
+    }
+  }
+}
